@@ -1,4 +1,4 @@
-resource "aws_cloudwatch_log_group" "name" {
+resource "aws_cloudwatch_log_stream" "name" {
   for_each = {
     for stream in var.streams :
     stream.name => stream
