@@ -4,5 +4,5 @@ variable "streams" {
     log_group_name = string # The name of the log group under which the log stream is to be created.
   }))
   description = "List of CloudWatch Log Streams."
-  default     = []
+  default     = [{ name = null, log_group_name = null }]
 }
